@@ -38,12 +38,15 @@ const SpecialShirts = () => {
 
 export default SpecialShirts;
 
-const Button = styled.div``;
+const Button = styled.div`
+  align-self: flex-start;
+`;
 const Title = styled.h1`
   line-height: 1.2;
   margin: 0;
   font-size: 3.7rem;
   font-weight: 900;
+  color: white;
 `;
 const Desc = styled.p`
   display: flex;
@@ -71,6 +74,7 @@ const Content = styled.div`
   height: 80%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   /* background-color: hotpink; */
 `;
@@ -79,7 +83,7 @@ const Wrapper = styled.div`
   width: 90%;
   height: 600px;
   border-radius: 15px;
-  background-color: "#800080ac";
+  background-color: #800080ac;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -91,7 +95,7 @@ const Container = styled.div`
   width: 100%;
   margin-top: 150px;
   padding: 60px 0px 20px 0px;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
