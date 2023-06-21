@@ -11,6 +11,8 @@ const HomeScreen = () => {
       <Hero />
       <Features />
       <ShirtGallery />
+      <br />
+      <br />
       <SpecialShirts />
       <Products />
     </div>

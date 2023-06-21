@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import product4 from "../../assets/product4.jpeg";
+import product4 from "../../assets/product6.jpeg";
 import { GlobalButton } from "../../Components/commons";
+import { BsDot } from "react-icons/bs";
 
 const SpecialShirts = () => {
   return (
@@ -12,18 +13,11 @@ const SpecialShirts = () => {
             <img src={product4} alt="" />
           </Img>
           <Content>
-            <Desc>
-              {/* <img src={logo} alt="" /> */}
-              Sylv-Shirts{" "}
-              <span>
-                <BsDot />
-              </span>
-            </Desc>
             <Title>
               Special offer <br /> in Quality Shirts
             </Title>
             <Desc>
-              choose the one that flatters your body shape and enhances your
+              Choose the one that flatters your body shape and enhances your
               confidence.
             </Desc>
             <Button>
@@ -31,7 +25,7 @@ const SpecialShirts = () => {
                 text="Discover more"
                 borderR="40px"
                 CC="white"
-                bgC="#800080ac"
+                bgC="black"
                 padding="12px 15px"
               />
             </Button>
@@ -54,14 +48,9 @@ const Title = styled.h1`
 const Desc = styled.p`
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 35px;
+  /* justify-content: center; */
+  font-size: 30px;
   color: white;
-  span {
-    color: purple;
-    font-size: 40px;
-    margin-top: 25px;
-  }
 `;
 
 const Img = styled.div`
@@ -69,17 +58,20 @@ const Img = styled.div`
   height: 100%;
   /* background-color: yellow; */
   margin-right: 30px;
+  overflow: hidden;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    margin-top: -70px;
   }
 `;
 const Content = styled.div`
   width: 40%;
   height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   /* background-color: hotpink; */
 `;
 
@@ -87,19 +79,19 @@ const Wrapper = styled.div`
   width: 90%;
   height: 600px;
   border-radius: 15px;
-  background-color: #fefce8f4;
+  background-color: "#800080ac";
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  background-image: url(${wrapbg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 const Container = styled.div`
   width: 100%;
+  margin-top: 150px;
   padding: 60px 0px 20px 0px;
-  /* background-color: red; */
+  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;

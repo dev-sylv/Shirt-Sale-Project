@@ -75,5 +75,5 @@ const MainText = styled.div`
 `;
 const Button = styled.div`
   margin-top: 20px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 `;
