@@ -7,7 +7,9 @@ const Header = () => {
     <div>
       <Container>
         <Wrapper>
-          <Logo>Sylv-Shirts</Logo>
+          <Logo>
+            Sylv-Shirts <span>.</span>
+          </Logo>
           <Navigations>
             <Navs>Home</Navs>
             <Navs>Products</Navs>
@@ -15,7 +17,12 @@ const Header = () => {
             <Navs>Features</Navs>
           </Navigations>
           <Buttons>
-            <GlobalButton bgC="" borderR="" text="" CC="" />
+            <GlobalButton
+              bgC="#800080ac"
+              borderR="8px"
+              text="Start for Free"
+              CC="white"
+            />
           </Buttons>
         </Wrapper>
       </Container>
@@ -40,7 +47,24 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
-const Logo = styled.div``;
-const Navigations = styled.div``;
-const Navs = styled.div``;
+const Logo = styled.div`
+  font-size: 35px;
+  /* color: white; */
+  span {
+    color: #800080ac;
+  }
+`;
+const Navigations = styled.div`
+  width: 30%;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #8080809e;
+  color: white;
+`;
+const Navs = styled.div`
+  cursor: pointer;
+`;
 const Buttons = styled.div``;

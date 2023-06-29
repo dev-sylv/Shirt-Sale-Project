@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Homelayouts } from "../Components/layouts";
+import { HomeScreen } from "../Pages";
 
 const AllRoutes = createBrowserRouter([
   {
@@ -8,6 +9,7 @@ const AllRoutes = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <HomeScreen />,
       },
     ],
   },

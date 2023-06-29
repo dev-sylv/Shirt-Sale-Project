@@ -26,12 +26,12 @@ const ButtonProps = styled.div<{ bgC: string; CC: string; borderR: string }>`
   border: none;
   outline: none;
   border-radius: ${(props) => props.borderR};
-  padding: 20px 40px;
+  padding: 12px 15px;
   transition: all 350ms;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  /* margin: 10px; */
   cursor: pointer;
   /* :hover{
         transform: scale(0.95);
