@@ -39,16 +39,24 @@ export default Hero;
 
 const Container = styled.div`
   width: 100%;
-  height: 70px;
-  background-color: transparent;
+  padding: 15px 0px 15px 0px;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 const Wrapper = styled.div`
   width: 90%;
-  height: 60px;
+  padding: 15px 0px 15px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
+const TextContent = styled.div``;
+const MainText = styled.div``;
+const MiniText = styled.div``;
+const Button = styled.div``;
+const Div = styled.div``;
+const Video = styled.div``;
+const Icon = styled.div``;
+const ImageContent = styled.div``;
