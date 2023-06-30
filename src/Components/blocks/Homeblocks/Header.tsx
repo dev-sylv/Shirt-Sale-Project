@@ -49,7 +49,7 @@ const Wrapper = styled.div`
 `;
 const Logo = styled.div`
   font-size: 35px;
-  /* color: white; */
+  color: white;
   span {
     color: #800080ac;
   }

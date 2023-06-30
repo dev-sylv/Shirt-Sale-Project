@@ -1,6 +1,7 @@
 import React from "react";
 import { GlobalButton } from "../../Components/commons";
 import { styled } from "styled-components";
+import { MdSlowMotionVideo } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -8,10 +9,13 @@ const Hero = () => {
       <Container>
         <Wrapper>
           <TextContent>
-            <MainText>Manage everything without any hassle</MainText>
+            <MainText>
+              Manage everything <br /> without any hassle 😃
+            </MainText>
             <MiniText>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
-              ratione vero quis, ad fugiat totam nulla inventore cum
+              We strive to provide you with a seamless and enjoyable shopping
+              experience. <br /> We believe that great style shouldn't come at a
+              hefty price
             </MiniText>
             <Div>
               <Button>
@@ -23,7 +27,9 @@ const Hero = () => {
                 />
               </Button>
               <Video>
-                <Icon></Icon>
+                <Icon>
+                  <MdSlowMotionVideo />
+                </Icon>
                 <p>Watch Video</p>
               </Video>
             </Div>
@@ -39,24 +45,46 @@ export default Hero;
 
 const Container = styled.div`
   width: 100%;
-  padding: 15px 0px 15px 0px;
-  background-color: black;
+  height: calc(80vh - 70px);
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 const Wrapper = styled.div`
   width: 90%;
-  padding: 15px 0px 15px 0px;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
+  background-color: red;
 `;
-const TextContent = styled.div``;
-const MainText = styled.div``;
+const TextContent = styled.div`
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+`;
+const MainText = styled.div`
+  font-size: 50px;
+`;
 const MiniText = styled.div``;
 const Button = styled.div``;
-const Div = styled.div``;
-const Video = styled.div``;
-const Icon = styled.div``;
-const ImageContent = styled.div``;
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Video = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+`;
+const Icon = styled.div`
+  margin-right: 10px;
+  margin-left: 20px;
+`;
+const ImageContent = styled.div`
+  background-color: green;
+`;
