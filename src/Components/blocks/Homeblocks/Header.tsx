@@ -51,7 +51,7 @@ const Logo = styled.div`
   font-size: 35px;
   color: white;
   span {
-    color: #800080ac;
+    color: purple;
   }
 `;
 const Navigations = styled.div`
