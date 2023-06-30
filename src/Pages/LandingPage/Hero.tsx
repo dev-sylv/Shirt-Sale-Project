@@ -34,7 +34,15 @@ const Hero = () => {
               </Video>
             </Div>
           </TextContent>
-          <ImageContent></ImageContent>
+          <ImageContent>
+            <MainDiv>
+              <Img1></Img1>
+              <Div2>
+                <Img2></Img2>
+                <Img3></Img3>
+              </Div2>
+            </MainDiv>
+          </ImageContent>
         </Wrapper>
       </Container>
     </div>
@@ -87,4 +95,31 @@ const Icon = styled.div`
 `;
 const ImageContent = styled.div`
   background-color: green;
+`;
+const Img1 = styled.div`
+  width: 100px;
+  height: 250px;
+  border-radius: 50px;
+  background-color: orange;
+  margin-right: 10px;
+`;
+const Img2 = styled.div`
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: orange;
+`;
+const Img3 = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: orange;
+`;
+const Div2 = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+const MainDiv = styled.div`
+  display: flex;
+  align-items: center;
 `;
