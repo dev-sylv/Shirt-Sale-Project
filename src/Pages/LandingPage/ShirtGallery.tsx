@@ -27,7 +27,7 @@ const ShirtGallery = () => {
               borderR="8px"
               text="Get Started"
               CC="white"
-              padding="12px 15px"
+              padding="10px 25px 10px 25px"
             />
           </Button>
         </Wrapper>
@@ -75,4 +75,5 @@ const MainText = styled.div`
 `;
 const Button = styled.div`
   margin-top: 20px;
+  padding-bottom: 50px;
 `;
