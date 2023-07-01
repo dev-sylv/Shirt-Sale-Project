@@ -6,12 +6,19 @@ interface Button {
   borderR: string;
   bgC: string;
   CC: string;
+  padding: string;
 }
 
-const GlobalButton: React.FC<Button> = ({ text, borderR, bgC, CC }) => {
+const GlobalButton: React.FC<Button> = ({
+  text,
+  borderR,
+  bgC,
+  CC,
+  padding,
+}) => {
   return (
     <div>
-      <ButtonProps borderR={borderR} CC={CC} bgC={bgC}>
+      <ButtonProps borderR={borderR} padding={padding} CC={CC} bgC={bgC}>
         {text}
       </ButtonProps>
     </div>
@@ -20,13 +27,18 @@ const GlobalButton: React.FC<Button> = ({ text, borderR, bgC, CC }) => {
 
 export default GlobalButton;
 
-const ButtonProps = styled.div<{ bgC: string; CC: string; borderR: string }>`
+const ButtonProps = styled.div<{
+  bgC: string;
+  CC: string;
+  borderR: string;
+  padding: string;
+}>`
   background-color: ${(props) => props.bgC};
   color: ${(props) => props.CC};
   border: none;
   outline: none;
   border-radius: ${(props) => props.borderR};
-  padding: 12px 15px;
+  padding: ${(props) => props.padding};
   transition: all 350ms;
   display: flex;
   align-items: center;

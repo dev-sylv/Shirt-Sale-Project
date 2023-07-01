@@ -26,6 +26,7 @@ const Header = () => {
               borderR="8px"
               text="Start for Free"
               CC="white"
+              padding="12px 15px"
             />
           </Buttons>
         </Wrapper>
