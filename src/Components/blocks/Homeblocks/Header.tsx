@@ -1,6 +1,7 @@
 import React from "react";
 import { GlobalButton } from "../../commons";
 import styled from "styled-components";
+import { BsDot } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -8,7 +9,10 @@ const Header = () => {
       <Container>
         <Wrapper>
           <Logo>
-            Sylv-Shirts <span>.</span>
+            Sylv-Shirts{" "}
+            <span>
+              <BsDot />
+            </span>
           </Logo>
           <Navigations>
             <Navs>Home</Navs>
@@ -48,10 +52,15 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 35px;
   color: white;
   span {
     color: purple;
+    font-size: 40px;
+    margin-top: 25px;
   }
 `;
 const Navigations = styled.div`
