@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import specialkid from "../Assets/specialkid.png";
-import wrapbg from "../Assets/wrap-bg.svg";
-import logo from "../Assets/sylvialogo.png";
+import product4 from "../../assets/product4.jpeg";
+import { GlobalButton } from "../../Components/commons";
 
 const SpecialShirts = () => {
   return (
@@ -10,20 +9,32 @@ const SpecialShirts = () => {
       <Container>
         <Wrapper>
           <Img>
-            <img src={specialkid} alt="" />
+            <img src={product4} alt="" />
           </Img>
           <Content>
             <Desc>
-              <img src={logo} alt="" />
+              {/* <img src={logo} alt="" /> */}
+              Sylv-Shirts{" "}
+              <span>
+                <BsDot />
+              </span>
             </Desc>
             <Title>
-              Special offer <br /> in kids products
+              Special offer <br /> in Quality Shirts
             </Title>
             <Desc>
-              Fashion is a form of self-expression and autonomy at a particular
-              period and place.
+              choose the one that flatters your body shape and enhances your
+              confidence.
             </Desc>
-            <Button>Discover more</Button>
+            <Button>
+              <GlobalButton
+                text="Discover more"
+                borderR="40px"
+                CC="white"
+                bgC="#800080ac"
+                padding="12px 15px"
+              />
+            </Button>
           </Content>
         </Wrapper>
       </Container>
@@ -33,19 +44,7 @@ const SpecialShirts = () => {
 
 export default SpecialShirts;
 
-const Button = styled.button`
-  width: 200px;
-  height: 65px;
-  background-color: #0f172a;
-  color: #fff;
-  margin-top: 70px;
-  border-radius: 40px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-`;
+const Button = styled.div``;
 const Title = styled.h1`
   line-height: 1.2;
   margin: 0;
@@ -53,14 +52,15 @@ const Title = styled.h1`
   font-weight: 900;
 `;
 const Desc = styled.p`
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-
-  img {
-    width: 100px;
-    height: 50px;
-    object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+  span {
+    color: purple;
+    font-size: 40px;
+    margin-top: 25px;
   }
 `;
 
