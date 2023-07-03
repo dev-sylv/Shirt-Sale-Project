@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../Assets/M_F HOUSING_free-file.png";
 import {
   BsFillTelephoneFill,
   BsArrowUpSquare,
   BsBoxArrowDown,
+  BsDot,
 } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FiFacebook } from "react-icons/fi";
@@ -12,14 +12,18 @@ import { TfiLinkedin } from "react-icons/tfi";
 import { TbBrandTwitter } from "react-icons/tb";
 import { BiLocationPlus } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Container>
       <Wrapper>
         <FirstDiv>
-          <Logo src={logo} />
+          <Logo>
+            Sylv-Shirts{" "}
+            <span>
+              <BsDot />
+            </span>
+          </Logo>
           <p>
             Mercy and Favour real estate <br />
             best real estate deals <br />
@@ -44,19 +48,19 @@ const Footer = () => {
         <SecondDiv>
           <Box>
             <h3>SOURCES</h3>
-            <Nav to="/about-us">About us</Nav>
-            <Nav to="/services">Services</Nav>
-            <Nav to="/about-us">Mission</Nav>
-            <Nav to="/signup">Become an agent</Nav>
+            <Nav>About us</Nav>
+            <Nav>Services</Nav>
+            <Nav>Mission</Nav>
+            <Nav>Become an agent</Nav>
           </Box>
 
           <Box2>
             <h3>Support</h3>
-            <Nav to="/all-properties">Business</Nav>
-            <Nav to="/all-properties">Blog</Nav>
-            <Nav to="agents">Creative</Nav>
-            <Nav to="/contact-us">Community</Nav>
-            <Nav to="/contact-us">Contact Us</Nav>
+            <Nav>Business</Nav>
+            <Nav>Blog</Nav>
+            <Nav>Creative</Nav>
+            <Nav>Community</Nav>
+            <Nav>Contact Us</Nav>
           </Box2>
 
           <Box2>
@@ -87,16 +91,29 @@ const Footer = () => {
           </p>
         </CopyRg>
       </Wrapper>
-      <ArrowToTop to="Hero">
+      {/* <ArrowToTop to="Hero">
         <BsArrowUpSquare />
-      </ArrowToTop>
+      </ArrowToTop> */}
     </Container>
   );
 };
 
 export default Footer;
 
-const ArrowToTop = styled(Link)`
+const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+  span {
+    color: purple;
+    font-size: 40px;
+    margin-top: 25px;
+  }
+`;
+
+const ArrowToTop = styled.div`
   position: fixed;
   right: 30px;
   font-size: 35px;
@@ -178,7 +195,7 @@ const Box = styled.div`
     margin-left: 15px;
   }
 `;
-const Nav = styled(Link)`
+const Nav = styled.div`
   padding-bottom: 20px;
   font-size: 18px;
   color: rgb(129, 132, 141);
