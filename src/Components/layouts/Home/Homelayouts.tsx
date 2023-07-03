@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../../blocks";
+import { Header, Footer } from "../../blocks";
 import { Outlet } from "react-router-dom";
 
 const Homelayouts = () => {
@@ -7,7 +7,7 @@ const Homelayouts = () => {
     <div>
       <Header />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
