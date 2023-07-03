@@ -25,9 +25,9 @@ const Footer = () => {
             </span>
           </Logo>
           <p>
-            Mercy and Favour real estate <br />
-            best real estate deals <br />
-            get your dream house <br />
+            Sylv Shirts, best selling <br />
+            best shirt sales deals <br />
+            get your unique shirts <br />
           </p>
           <p>Connect with us on all our social media</p>
           <Icons>
@@ -50,8 +50,8 @@ const Footer = () => {
             <h3>SOURCES</h3>
             <Nav>About us</Nav>
             <Nav>Services</Nav>
-            <Nav>Mission</Nav>
-            <Nav>Become an agent</Nav>
+            <Nav>Features</Nav>
+            <Nav>Buy a shirt</Nav>
           </Box>
 
           <Box2>
@@ -67,7 +67,7 @@ const Footer = () => {
             <h3>Contact Info</h3>
             <div>
               <BiLocationPlus />
-              <Nav1>No 106 Musuku road Kwabenya, Ghana</Nav1>
+              <Nav1>Prince Fadina street</Nav1>
             </div>
             <div>
               <MdEmail />
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
             <div>
               <BsFillTelephoneFill />
-              <Nav1>0541516214</Nav1>
+              <Nav1>09061180473</Nav1>
             </div>
           </Box2>
         </SecondDiv>
@@ -84,9 +84,9 @@ const Footer = () => {
         <br />
         <CopyRg>
           <p>
-            Copyright @2023 MF-REAL-ESTATE. All Rights Reserved <br />{" "}
+            Copyright @2023 Sylv Shirt Sales. All Rights Reserved <br />{" "}
             <span>
-              <a href="https://wa.me/233541516214">David Ibekwute</a>
+              <a href="https://wa.me/09061180473">Sylvia Adimike</a>
             </span>
           </p>
         </CopyRg>
@@ -101,13 +101,10 @@ const Footer = () => {
 export default Footer;
 
 const Logo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 35px;
   color: white;
   span {
-    color: purple;
+    color: white;
     font-size: 40px;
     margin-top: 25px;
   }
@@ -118,7 +115,7 @@ const ArrowToTop = styled.div`
   right: 30px;
   font-size: 35px;
   cursor: pointer;
-  color: #005555;
+  color: white;
   transition: all 350ms;
   :hover {
     margin-top: -5px;
@@ -127,7 +124,7 @@ const ArrowToTop = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  background-color: #efefef;
+  background-color: #800080ac;
   margin: 0;
   position: relative;
 `;
@@ -148,7 +145,7 @@ const FirstDiv = styled.div`
 
   p {
     font-size: 18px;
-    color: gray;
+    color: white;
     line-height: 23px;
   }
 `;
@@ -156,6 +153,7 @@ const SecondDiv = styled.div`
   width: 65%;
   margin-top: 50px;
   display: grid;
+  color: white;
   grid-template-columns: repeat(3, 1fr);
   @media screen and (max-width: 1024px) {
     margin-left: 90px;
@@ -164,11 +162,6 @@ const SecondDiv = styled.div`
     margin-left: 30px;
     grid-template-columns: 1fr;
   }
-`;
-const Logo = styled.img`
-  width: 50%;
-  height: 50%;
-  object-fit: contain;
 `;
 const Box2 = styled.div`
   display: flex;
@@ -198,7 +191,7 @@ const Box = styled.div`
 const Nav = styled.div`
   padding-bottom: 20px;
   font-size: 18px;
-  color: rgb(129, 132, 141);
+  color: white;
   transition: all 400ms;
   cursor: pointer;
   text-decoration: none;
@@ -216,11 +209,11 @@ const CopyRg = styled.div`
   text-align: center;
   font-size: 13px;
   color: white;
-  background-color: #005555;
+  background-color: black;
   margin-top: 70px;
   span {
     a {
-      color: grey;
+      color: white;
       text-decoration: none;
     }
   }
@@ -228,7 +221,7 @@ const CopyRg = styled.div`
 const Nav1 = styled.div`
   padding-bottom: 20px;
   font-size: 18px;
-  color: rgb(129, 132, 141);
+  color: white;
   transition: all 400ms;
 `;
 const Icons = styled.div`
@@ -239,20 +232,13 @@ const Circle = styled.div`
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #074237;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 350ms;
   color: white;
-  border: 3px solid #074237;
+  border: 3px solid black;
   margin: 10px;
   cursor: pointer;
-  :hover {
-    border: 2px solid #074237;
-    border-color: #16335a;
-    background-color: white;
-    color: #074237;
-    margin-top: -1px;
-  }
 `;
