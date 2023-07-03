@@ -2,32 +2,9 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillStarFill } from "react-icons/bs";
 import shirt from "../Assets/shirt.png";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { useQuery } from "@tanstack/react-query";
-import { GetAllProducts } from "../API/Api";
-import { Oval } from "react-loader-spinner";
 
 const Products = () => {
-  // For loading :
-  <Oval
-    height={80}
-    width={80}
-    color="#4fa94d"
-    wrapperStyle={{}}
-    wrapperClass=""
-    visible={true}
-    ariaLabel="oval-loading"
-    secondaryColor="#4fa94d"
-    strokeWidth={2}
-    strokeWidthSecondary={2}
-  />;
-  // Query funtion to get all products
-  const GettingProducts = useQuery({
-    queryKey: ["All-Products"],
-    queryFn: GetAllProducts,
-  });
-
   return (
     <div>
       <Container>
@@ -36,42 +13,39 @@ const Products = () => {
             New Arrivals. <span>All Products</span>
           </h1>
 
-          <Products>
-            {GettingProducts.isLoading ? <Oval /> : null}
-            {GettingProducts?.data?.data.map((product: any) => (
-              <Display to={`/productdetails/${product._id}`}>
-                <First>
-                  <Wishlist>
-                    <Heart>
-                      <span>
-                        <AiOutlineHeart />
-                      </span>
-                    </Heart>
-                  </Wishlist>
-                  <ProductImg>
-                    <img src={shirt} alt="" />
-                  </ProductImg>
-                </First>
-                <Second>
-                  <One>
-                    <h2>{product.title}</h2>
-                  </One>
-                  <Two>
-                    <h3>{product.desc}</h3>
-                  </Two>
-                  <Three>
-                    <Four>{product.price}</Four>
-                    <Five>
-                      <span>
-                        <BsFillStarFill style={{ color: "#FBBF24" }} />
-                      </span>
-                      <p>4.6 (41 reviews)</p>
-                    </Five>
-                  </Three>
-                </Second>
-              </Display>
-            ))}
-          </Products>
+          <AllProducts>
+            <Display>
+              <First>
+                <Wishlist>
+                  <Heart>
+                    <span>
+                      <AiOutlineHeart />
+                    </span>
+                  </Heart>
+                </Wishlist>
+                <ProductImg>
+                  <img src={shirt} alt="" />
+                </ProductImg>
+              </First>
+              <Second>
+                <One>
+                  <h2>hhh</h2>
+                </One>
+                <Two>
+                  <h3>hhj</h3>
+                </Two>
+                <Three>
+                  <Four>789</Four>
+                  <Five>
+                    <span>
+                      <BsFillStarFill style={{ color: "#FBBF24" }} />
+                    </span>
+                    <p>4.6 (41 reviews)</p>
+                  </Five>
+                </Three>
+              </Second>
+            </Display>
+          </AllProducts>
         </Wrapper>
       </Container>
     </div>
@@ -193,14 +167,14 @@ const First = styled.div`
   overflow: hidden;
 `;
 
-const Display = styled(NavLink)`
+const Display = styled.div`
   width: 320px;
   height: 100%;
   text-decoration: none;
   margin: 20px;
   /* background-color: red; */
 `;
-const Products = styled.div`
+const AllProducts = styled.div`
   width: 100%;
   height: 65vh;
   /* background-color: #00ff62; */
